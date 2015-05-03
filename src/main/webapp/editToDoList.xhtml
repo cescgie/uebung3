@@ -16,8 +16,12 @@
     
 		<h:outputText value="Meine ToDo-Liste" class="tableheader"/>
 		<!-- //TODO -->
-		<h:commandButton action="#{toDoListMB.save}" value="Speichern" />
-	
+		<br/>
+		<h:selectManyCheckbox value="#{toDoListMB.selectedToDos}">
+			<f:selectItems value="#{toDoListMB.toDos}" var="todo" itemValue="#{todo.name}" itemLabel="#{todo.name}"  />
+		</h:selectManyCheckbox>
+		
+		<h:commandButton action="#{toDoListMB.save}" value="Speichern" />		
 	</h:form>  
 </body>
 </html>

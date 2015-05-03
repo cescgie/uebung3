@@ -11,7 +11,6 @@ public class ToDoList implements Serializable {
 	
 	private List<ToDo> toDos =  new ArrayList<ToDo>();
 	
-	
 	public ToDoList() {
 		super();
 		this.setToDos();
