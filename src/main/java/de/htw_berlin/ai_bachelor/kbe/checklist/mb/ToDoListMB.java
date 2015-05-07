@@ -25,12 +25,6 @@ public class ToDoListMB implements Serializable {
 	public ToDoListMB() {
 		super();
 		//TODO
-		this.toDos.add(new ToDo("KBE: Aufgabenzettel 2 bearbeiten"));
-		this.toDos.add(new ToDo("KBE: Zweite Vorlesung nacharbeiten"));
-		this.toDos.add(new ToDo("Lebensmittel einkaufen "));
-		this.toDos.add(new ToDo("Leergut wegbringen"));
-		this.toDos.add(new ToDo("Geburtstagsgeschenk besorgen"));
-		this.toDos.add(new ToDo("Putzen"));
 	}    
 
 	//TODO

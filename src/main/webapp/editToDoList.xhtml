@@ -20,8 +20,9 @@
 		<h:selectManyCheckbox value="#{toDoListMB.selectedToDos}"  layout="pageDirection">
 			<f:selectItems value="#{toDoListMB.toDos}" var="todo" itemValue="#{todo.name}" itemLabel="#{todo.name}"  />
 		</h:selectManyCheckbox>
-		
 		<h:commandButton action="#{toDoListMB.save}" value="Speichern" />		
+		<br/>
+		<h:outputText value="${toDoListMB.selectedToDos.size()}"/>
 	</h:form>  
 </body>
 </html>
